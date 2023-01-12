@@ -52,10 +52,11 @@
 		"vars-on-top": ["error"],
 		"arrow-parens": ["error", "as-needed"],
 		"brace-style": ["error"],
-		"comma-dangle": ["error"],
 		"comma-style": ["error"],
 		"comma-spacing": ["error"],
 		"semi-style": ["error"],
-		"camelcase": ["error"]
+		"camelcase": ["error"],
+		"indent": ["error", 4],
+		"max-len": ["error", 120]
 	}
 }
