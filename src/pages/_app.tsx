@@ -8,20 +8,18 @@ import { wrapper } from '../state-manager/store';
 // Config
 import { theme } from '../configs/theme';
 
-// Assets
-import '../assets/styles/globals/general.css';
-import '../assets/styles/globals/fontawsome.css';
-
 const App: FC<AppProps> = ({ Component, pageProps }: AppProps) => {
     const darkModeTheme = createTheme(theme('light'));
+
     return (
         <ThemeProvider theme={darkModeTheme}>
             <Toaster
                 position='bottom-right'
                 containerStyle={{
+                    width: '42px',
                     zIndex: 9999
                 }}
-            /> 
+            />
             <Component {...pageProps} />
         </ThemeProvider>
     );

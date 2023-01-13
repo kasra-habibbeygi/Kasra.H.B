@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 export interface UserProfileType {
-	them: string;
+    them: string;
 }
 
 const initialState: UserProfileType = {
-    them : 'dark'
+    them: 'dark'
 };
 
 export const userProfile = createSlice({

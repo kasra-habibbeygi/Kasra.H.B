@@ -3,7 +3,7 @@ import React from 'react';
 const Index = () => (
     <div>
         <a href='#'>asd</a>
-        <p>kasra</p>
+        <p>asdasd</p>
     </div>
 );
 
