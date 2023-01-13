@@ -48,15 +48,17 @@
 		"no-else-return": ["error"],
 		"no-multi-assign": ["error"],
 		"sort-keys": ["error"],
-		"sort-imports": ["error"],
 		"vars-on-top": ["error"],
 		"arrow-parens": ["error", "as-needed"],
 		"brace-style": ["error"],
 		"comma-style": ["error"],
 		"comma-spacing": ["error"],
+		"comma-dangle": ["error"],
 		"semi-style": ["error"],
 		"camelcase": ["error"],
 		"indent": ["error", 4],
-		"max-len": ["error", 120]
+		"max-len": ["error", 120],
+		"no-multi-spaces": ["error"],
+		"no-multiple-empty-lines": ["error"]
 	}
 }
