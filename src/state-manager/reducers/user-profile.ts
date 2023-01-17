@@ -10,7 +10,7 @@ const initialState: UserProfileType = {
 
 export const userProfile = createSlice({
     initialState,
-    name: 'auth',
+    name: 'theme',
     reducers: {
         themeHandler(state, action) {
             state.them = action.payload;

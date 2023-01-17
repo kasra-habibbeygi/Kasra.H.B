@@ -33,7 +33,7 @@
         "endOfLine": "auto"
       }
     ],
-    "arrow-body-style": ["error", "as-needed"],
+    // "arrow-body-style": ["error", "as-needed"],
     "for-direction": ["error"],
     "no-cond-assign": ["error"],
     "no-const-assign": ["error"],
@@ -61,7 +61,6 @@
     "semi": ["error"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "capitalized-comments": ["error"],
     "consistent-return": ["error"],
     "curly": ["error"],
     "eqeqeq": ["error"],
@@ -70,7 +69,6 @@
     "no-alert": ["error"],
     "no-else-return": ["error"],
     "no-multi-assign": ["error"],
-    "sort-keys": ["error"],
     "vars-on-top": ["error"],
     "arrow-parens": ["error", "as-needed"],
     "brace-style": ["error"],
@@ -80,7 +78,7 @@
     "semi-style": ["error"],
     "camelcase": ["error"],
     "indent": ["error", 4],
-    "max-len": ["error", 120],
+    "max-len": ["error", 140],
     "no-multi-spaces": ["error"],
     "no-multiple-empty-lines": ["error"]
   }

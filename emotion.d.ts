@@ -3,22 +3,10 @@ import '@emotion/react';
 
 declare module '@emotion/react' {
     interface Theme {
-        mode: string;
-        palette: {
-            color: {
-                test: string;
-            };
-        };
-    }
-}
-
-declare module '@mui/material/styles' {
-    interface Theme {
-        mode: string;
-        palette: {
-            color: {
-                test: string;
-            };
+        colors: {
+            primary: string;
+            blackAndWhite: string;
+            lightBlackAndWhite: string;
         };
     }
 }
