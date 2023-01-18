@@ -3,10 +3,9 @@ import React from 'react';
 //Assets
 import * as S from '../assets/styles/index/index';
 import PersonalImage from '../assets/images/dark.jpg';
+import Link from 'next/link';
 
 const Index = () => {
-    console.log(PersonalImage);
-
     return (
         <S.MainField>
             <div className='yellow_line'></div>
@@ -20,6 +19,12 @@ const Index = () => {
                     I&apos;m a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly experiences, I am
                     passionate about building excellent software that improves the lives of those around me.
                 </p>
+                <Link href='/about-me'>
+                    <S.ButtonField>
+                        More About Me
+                        <i className='fa fa-arrow-right'></i>
+                    </S.ButtonField>
+                </Link>
             </S.AboutMeField>
         </S.MainField>
     );

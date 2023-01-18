@@ -4,10 +4,9 @@ type ImageFieldTypes = {
     backgroundImage: string;
 };
 
-export const MainField = styled.main(props => ({
+export const MainField = styled.section(props => ({
     display: 'flex',
     alignItems: 'center',
-    gap: '300px',
     height: '100vh',
     padding: '40px',
 
@@ -15,16 +14,16 @@ export const MainField = styled.main(props => ({
         backgroundColor: props.theme.colors.primary,
         position: 'fixed',
         height: '200%',
-        width: '1500px',
+        width: '100%',
         transform: 'rotate(-15deg)',
-        left: '-1100px',
+        left: '-83%',
         top: '-20%',
         zIndex: '-1'
     }
 }));
 
 export const ImageField = styled.div<ImageFieldTypes>(props => ({
-    minWidth: '650px',
+    minWidth: '33%',
     height: '100%',
     borderRadius: '30px',
     background: `url(${props.backgroundImage})`,
@@ -36,6 +35,7 @@ export const ImageField = styled.div<ImageFieldTypes>(props => ({
 
 export const AboutMeField = styled.div(props => ({
     maxWidth: '600px',
+    margin: '0 auto',
 
     h1: {
         color: props.theme.colors.primary,
@@ -68,6 +68,57 @@ export const AboutMeField = styled.div(props => ({
             width: '40px',
             borderRadius: '10px',
             background: props.theme.colors.primary
+        }
+    }
+}));
+
+export const ButtonField = styled.button(props => ({
+    overflow: 'hidden',
+    position: 'relative',
+    borderRadius: '50px',
+    backgroundColor: 'transparent',
+    color: 'white',
+    fontWeight: '600',
+    border: `2px solid ${props.theme.colors.primary}`,
+    fontFamily: 'Poppins',
+    fontSize: '1.1rem',
+    paddingRight: '60px',
+    width: '250px',
+    height: '55px',
+
+    i: {
+        position: 'absolute',
+        right: '-1px',
+        top: '-1px',
+        bottom: '0',
+        width: '55px',
+        height: '55px',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        fontSize: '1.1rem',
+        color: '#fff',
+        borderRadius: '50px',
+        backgroundColor: props.theme.colors.primary
+    },
+
+    '&::before': {
+        zIndex: '-1',
+        content: '""',
+        position: 'absolute',
+        top: '0',
+        bottom: '0',
+        left: '0',
+        right: '0',
+        transform: 'translateX(100%)',
+        transition: 'all .3s ease-out',
+        borderRadius: '50px',
+        backgroundColor: props.theme.colors.primary
+    },
+
+    ':hover': {
+        '&::before': {
+            transform: 'translateX(0%)'
         }
     }
 }));
