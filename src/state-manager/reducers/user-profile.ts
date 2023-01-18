@@ -13,6 +13,7 @@ export const userProfile = createSlice({
     name: 'theme',
     reducers: {
         themeHandler(state, action) {
+            localStorage.setItem('theme', action.payload);
             state.them = action.payload;
         }
     }
